@@ -1,0 +1,150 @@
+.page-title {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 320px;
+    background-image: url('../img/page-menu.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.page-title::before {
+    position: absolute;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.page-title .breadcrumb {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 950px;
+    margin: auto;
+    text-align: left;
+}
+
+.page-title .breadcrumb li {
+    display: inline-block;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+.page-title .breadcrumb li::after {
+    content: '>';
+    padding: 0 10px;
+}
+
+.page-title .breadcrumb li:last-of-type::after {
+    content: '';
+}
+
+.page-title .breadcrumb a {
+    color: #fff;
+}
+
+.page-title-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 950px;
+    margin: auto;
+}
+
+.page-title-box h1 span {
+    display: block;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.menu-info {
+    text-align: left;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    background: #f8f8f8;
+    padding-top: 0;
+    padding-bottom: 60px;
+}
+
+section.menu-info:first-of-type {
+    padding-top: 50px;
+}
+
+section.menu-info h1 {
+    text-align: center;
+}
+
+section.menu-info h1 img {
+    display: block;
+    width: 60px;
+    margin: auto;
+}
+
+section.menu-info .row {
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+section.menu-info .col-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section.menu-info .item-osozai {
+    position: relative;
+    padding-top: 30px;
+}
+
+section.menu-info .item-osozai .recommend {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 100px;
+    z-index: 999;
+}
+
+section.menu-info .item-osozai .thumb {
+    margin-bottom: 10px;
+}
+
+section.menu-info .item-osozai .menu-detail h3 {
+    margin-bottom: 5px;
+}
+
+section.menu-info .item-osozai .menu-detail .price p {
+    color: #96514d;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:768px) {
+    .page-title {
+        top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .page-title .breadcrumb {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .page-title .breadcrumb li {
+        font-size: 12px;
+        font-size: 1.2rem;
+    }
+
+    .page-title-box {
+        width: 100%;
+    }
+}
